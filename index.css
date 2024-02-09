@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+  }
+body {
+    height: 90vh;
+    width: 90vw;
+}
+.heading{
+    text-align: center;
+    font-family: arial,sans-serif;
+    font-size: 30px;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+.perodictable{
+    display: grid;
+    grid-template-columns: repeat(18, 1fr); 
+    gap: 5px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    
+}
+/* @media only screen and (max-width: 600px) {
+    .perodictable {
+        grid-template-columns: repeat(4, minmax(50px, 1fr));
+    }
+}
+@media only screen and (max-width: 400px) {
+    .perodictable {
+        grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+    }
+} */
+.perodictable > div{
+    /* white-space: nowrap;
+    width: auto;
+    max-width: 20px; */
+    font-family:arial,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    opacity: 0.86;
+    
+}
+.perodictable >div:not(#space):hover {
+    z-index: 1;
+    transform: scale(1.5);
+    transition: transform 0.8s ease;
+    /* width:auto;
+    overflow: visible; */
+
+}
+
+.perodictable > div:not(#space):hover .element-name {
+    display: block;
+    
+}
+.perodictable > div:not(#space):hover .atomic-weight {
+    display: block;
+    
+}
+
+.atomic-number{
+    position: absolute;
+    font-size: 8px;
+    top:2px;
+    left: 2px;
+}
+.atomic-weight{
+    display: none;
+    position: absolute;
+    font-size:8px;
+    top:2px;
+    right:2px;
+    transition: display 0.8s ease;
+}
+.element-name{
+    display: none;
+    position: absolute;
+    font-size:6.5px;
+    bottom:0px;
+    text-align: center;
+    transition: display 0.8s ease;
+
+}
+#He {
+    grid-column-start: 18;
+  }
+#B,#Al{
+    grid-column-start: 13;
+}
+#Ce,#Th{
+    grid-column-start: 4;
+}
+#space{
+    padding: 10px;
+    grid-column-start: 1;
+    grid-column-end: 19;
+}
+.RNM {
+    background-color: #e2eeff;
+    color: #0060f0;
+    padding: 13px;
+    border-radius: 5px;
+}
+.NG{
+    background-color: #ffe7eb;
+    color: #cd1d5e;
+    padding: 13px;
+    border-radius: 5px;
+}
+.AM{
+    background-color: #d8f8ff;
+    color: #00758c;
+    padding: 13px;
+    border-radius: 5px;
+}
+.AEM{
+    background-color: #ffe7e7;
+    color: #d90024;
+    padding: 13px;
+    border-radius: 5px;
+}
+.M{
+    background-color: #fef7e0;
+    color: #945700;
+    padding: 12px;
+    border-radius: 5px;
+}
+.PTM{
+    background-color: #d6f9e8;
+    color: #37563c;
+    padding: 12px;
+    border-radius: 5px;
+}
+.TM{
+    background-color: #f3e8fd;
+    color: #6232ec;
+    padding: 12px;
+    border-radius: 5px;
+}
+.UP{
+    background-color: #e7e7ea;
+    color: #3f374f;
+    padding: 12px;
+    border-radius: 5px;
+}
+.L{
+    background-color: #dff3ff;
+    color: #003355;
+    padding: 12px;
+    border-radius: 5px;
+}
+.A{
+    background-color: #ffe6d4;
+    color: #cb3200;
+    padding: 12px;
+    border-radius: 5px; 
+}
