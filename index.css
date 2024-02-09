@@ -14,13 +14,14 @@ body {
 }
 .perodictable{
     display: grid;
-    grid-template-columns: repeat(18, 1fr); 
+    grid-template-columns: repeat(18, 1fr); /*each taking up an equal fraction of the available space  */
     gap: 5px;
     width: 100%;
     max-width: 800px;
     margin: auto;
     
 }
+
 /* @media only screen and (max-width: 600px) {
     .perodictable {
         grid-template-columns: repeat(4, minmax(50px, 1fr));
@@ -37,7 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 14px;
     position: relative;
     opacity: 0.86;
     
@@ -46,13 +47,10 @@ body {
     z-index: 1;
     transform: scale(1.5);
     transition: transform 0.8s ease;
-
 }
-/* 
-.perodictable > div:not(#space):hover .element-name {
-    display: block;
-    
-} */
+
+
+
 .perodictable > div:not(#space):hover .atomic-weight {
     display: block;
     
@@ -74,12 +72,42 @@ body {
 }
 .element-name{
     position: absolute;
-    font-size:6.5px;
+    width: auto;
+    font-size:6px;
     bottom:2px;
+    padding-left: 1px;
     text-align: center;
 
-
 }
+.labels {
+    margin-top: 25px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+.label {
+    font-family:arial,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 9px;
+    position: relative;
+    opacity: 0.86;
+}
+
+.bullet {
+    display: inline-block;
+    width: 15px; 
+    height: 15px; 
+    border-radius: 50%; 
+    margin-right: 5px;
+    border: 2px solid;
+    opacity: 0.86;
+}
+
 #He {
     grid-column-start: 18;
   }
@@ -100,11 +128,19 @@ body {
     padding: 13px;
     border-radius: 5px;
 }
+.BRNM{
+    background-color: #e2eeff;
+    background-color: #0060f0;
+}
 .NG{
     background-color: #ffe7eb;
     color: #cd1d5e;
     padding: 13px;
     border-radius: 5px;
+}
+.BNG{
+    background-color: #ffe7eb;
+    background-color: #cd1d5e;
 }
 .AM{
     background-color: #d8f8ff;
@@ -112,11 +148,19 @@ body {
     padding: 13px;
     border-radius: 5px;
 }
+.BAM{
+    background-color:#d8f8ff;
+    border-color: #00758c;
+}
 .AEM{
     background-color: #ffe7e7;
     color: #d90024;
     padding: 13px;
     border-radius: 5px;
+}
+.BAEM{
+    background-color: #ffe7e7;
+    border-color: #d90024;
 }
 .M{
     background-color: #fef7e0;
@@ -124,11 +168,19 @@ body {
     padding: 12px;
     border-radius: 5px;
 }
+.BM{
+    background-color: #fef7e0;
+    background-color: #945700;
+}
 .PTM{
     background-color: #d6f9e8;
     color: #37563c;
     padding: 12px;
     border-radius: 5px;
+}
+.BPTM{
+    background-color: #d6f9e8;
+    color: #37563c;
 }
 .TM{
     background-color: #f3e8fd;
@@ -136,11 +188,19 @@ body {
     padding: 12px;
     border-radius: 5px;
 }
+.BTM{
+    background-color: #f3e8fd;
+    background-color: #6232ec;
+}
 .UP{
     background-color: #e7e7ea;
     color: #3f374f;
     padding: 12px;
     border-radius: 5px;
+}
+.BUP{
+    background-color: #e7e7ea;
+    background-color: #3f374f;
 }
 .L{
     background-color: #dff3ff;
@@ -148,9 +208,17 @@ body {
     padding: 12px;
     border-radius: 5px;
 }
+.BL{
+    background-color: #dff3ff;
+    background-color: #003355;
+}
 .A{
     background-color: #ffe6d4;
     color: #cb3200;
     padding: 12px;
     border-radius: 5px; 
+}
+.BA{
+    background-color: #ffe6d4;
+    background-color: #cb3200;
 }
