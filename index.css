@@ -48,11 +48,11 @@ body {
     transition: transform 0.8s ease;
 
 }
-
+/* 
 .perodictable > div:not(#space):hover .element-name {
     display: block;
     
-}
+} */
 .perodictable > div:not(#space):hover .atomic-weight {
     display: block;
     
@@ -73,12 +73,11 @@ body {
     transition: display 0.8s ease;
 }
 .element-name{
-/*     display: none; */
     position: absolute;
     font-size:6.5px;
     bottom:2px;
     text-align: center;
-/*     transition: display 0.8s ease; */
+
 
 }
 #He {
