@@ -32,9 +32,6 @@ body {
     }
 } */
 .perodictable > div{
-    /* white-space: nowrap;
-    width: auto;
-    max-width: 20px; */
     font-family:arial,sans-serif;
     display: flex;
     justify-content: center;
@@ -49,8 +46,6 @@ body {
     z-index: 1;
     transform: scale(1.5);
     transition: transform 0.8s ease;
-    /* width:auto;
-    overflow: visible; */
 
 }
 
