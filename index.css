@@ -96,6 +96,7 @@ body {
     font-size: 9px;
     position: relative;
     opacity: 0.86;
+    cursor: pointer;
 }
 
 .bullet {
