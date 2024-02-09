@@ -73,12 +73,12 @@ body {
     transition: display 0.8s ease;
 }
 .element-name{
-    display: none;
+/*     display: none; */
     position: absolute;
     font-size:6.5px;
-    bottom:0px;
+    bottom:2px;
     text-align: center;
-    transition: display 0.8s ease;
+/*     transition: display 0.8s ease; */
 
 }
 #He {
