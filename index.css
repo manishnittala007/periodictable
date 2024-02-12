@@ -6,9 +6,11 @@ body {
     width: 90vw;
 }
 .heading{
+    max-width: 95%;
+    margin: auto;
     text-align: center;
     font-family: arial,sans-serif;
-    font-size: 30px;
+    font-size: 26px;
     padding-top: 10px;
     padding-left: 30px;
 }
